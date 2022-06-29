@@ -10,7 +10,7 @@ class Pessoa:
     # def falar(self): # o parâmetro self está ligado a instância ligado a ela, no caso pessoa_1 ou pessoa_2
     #     # como se fosse, pessoa_1.falar(pessoa_1)
     #     print("Fala da pessoa...")
-    def __init__(self, nome, idade, comendo=False, falando=False):
+    def __init__(self, nome, idade, comendo=False, falando=False): # criando um construtor
         self.nome = nome
         self.idade = idade
         self.comendo = comendo
