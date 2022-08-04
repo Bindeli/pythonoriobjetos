@@ -163,22 +163,157 @@ print('\nExemplo de iteração : ')
 """
 Faça um código que tenha uma frase em uma variável com tudo em minúsculo, e devemos iterar sobre essa frase e deixar 
 a letra que o usuário escolher em maiúsculo, lembrando que o usuário só pode escrever uma letra, e não pode ser números,
-e no final armazene a nova frase em uma nova variável.
+e no final armazene a nova frase em uma nova variável. Dica : tamanho da frase.
 """
 
 # é difícil, então vou te ajudar
 
 #--------------------------------------------------------------------------------------------------------------------
+"""
+Repetição com For In
 
+Já o laço For serve para iterar em estruturas onde sabemos o seu fim.
 
+Exemplo de utilização :
 
+texto = 'Python'
 
+for letra in texto:
+    print(letra)
+    
+esse código vai imprimir uma letra a cada laço da variável "texto"
 
+Aqui também podemos utilizar o break para terminar o laço ou o continue para pular para o próximo laço!!!!!
 
+"""
 
+# Utilizar um debugger para mostrar
 
+palavra_teste = 'Ha57gda67g'
 
+for letra in palavra_teste:
+    if letra.isdigit():
+        print(f'Esse letra é um dígito : {letra} {type(letra)}', end='')
+        int(letra)
+        print(f', Agora a letra é {type(letra)}')
+    else:
+        print(f'Letra: {letra}')
+print('')
 
+#--------------------------------------------------------------------------------------------------
+"""
+Range em Python : é uma função que irá retornar um conjunto de números sequencias setadas pelo usuário.
 
+Por exemplo um range(10) irá ter os valores 0,1,2,3,4,5,6,7,8,9.
+
+lista = list(range(10))
+print(f'{lista}') saída : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Assim como o fatiamento, no range teremos um ponto de inicio, de parada e de step
+
+Exemplo: 
+
+range(2, 15, 2) = saída : [2, 4, 6, 8, 10, 12, 14]
+
+lista2 = list(range(2,15,2))
+print(f'{lista2}')
+
+"""
+#
+"""
+Com a função for in junto com range, crie um código que leia uma sequencia de números pulando de 3 em 3.
+"""
+#
+"""
+Crie um código que mostre os múltiplos de 7, de 0 até 100.
+"""
+#
+"""
+Crie um código que pegue uma palavra e transforme as vogais em @ e mude as consoantes em letras maísculas.
+"""
+#
+
+#------------------------------------------------------------------------------------------------------------
+"""
+Lista em Python!!!!!!!!!!!!!!!!!!
+
+lista é um tipo de dado para armazenar multiplos valores nela. Enquanto a variavel comum que armazena apenas um valor
+
+lista_exemplo = ['Anildson','s2','Eneas','casalzinho',10, 8,5, True] 
+
+Esse é uma lista que iniciamo com [], pode armazenar elementos Strings, inteiros, float, e boolean!
+
+E para acessar esse valores podemos utilizar os índices!!!!!!
+
+          0   1   2   3   4  
+lista = ['A','B','C','D','E']
+         -5  -4  -3  -2  -1
+
+Lembrando que a lista é um elemento mutável, ou seja, podemos modificar um valor dentro dela.
+
+Podemos consultar por índices:
+
+lista[2] = C
+
+Podemos utilizar o fatiamento
+
+lista[0:4:2] = A C
+
+"""
+#--------------------------------------------------------------------------------------------------
+"""
+Funções de Listas:
+
+Começando por extend = mescla duas listas, fazendo com que passe a existir apenas uma, com todos os elementos
+
+lista_1 = [1,2,3]
+lista_2 = [4,5,6]
+
+lista_final = [1,2,3,4,5,6]
+"""
+#
+"""
+Utilizando o extende, junte essas duas listas :
+lista 1 = ['a','d',3,10.5]
+lista 2 = [10,'anea','sd', 98]
+"""
+
+#--------------------------------------------------------------------------------------------------
+"""
+Função Append = insere um registro como último elemento, quando desejamos adicionar um elemento na lista
+
+lista = [1,2,3]
+
+lista.append(4)
+
+lista = [1,2,3,4]
+"""
+#
+"""
+Faça um código que adicione em uma lista, apenas números pares na sequencia de 0 a 20
+"""
+#--------------------------------------------------------------------------------------------------
+"""
+Insert = Quando desejamos adicionar um elemento em determinada posição que indicarmos.
+
+lista_ex = [0,1,2,3]
+
+lista_ex.insert(2,'testando') # Saída [0, 1, 'testando', 2, 3]
+
+print(lista_ex)
+
+"""
+#--------------------------------------------------------------------------------------------------
+"""
+Função Pop() - Ela remove o último elemento da lista (caso o índice não seja indicamos em parênteses)
+
+lista = [0,1,2,3,4,5]
+
+lista.pop()
+
+lista = [0,1,2,3,4]
+"""
+#--------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
 
 
